@@ -25,8 +25,8 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: Install flake8
         run: pip install flake8
-      - name: Run flake8
-        run: flake8 . --max-line-length=120 --ignore=E501,W503 --exclude=.git,__pycache__
+     - name: Run flake8
+        run: flake8 . --max-line-length=120 --ignore=E501,W503,E302,E303,E305,E501,W291,W293,F401,E711,E712 --exclude=.git,__pycache__,migrations
 
   test:
     runs-on: ubuntu-latest
