@@ -37,4 +37,4 @@ instance/
 
 # Claude Code
 .claude/
-CLAUDE.md
+CLAUDE.md.env 
